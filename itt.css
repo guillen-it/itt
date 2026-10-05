@@ -1,0 +1,279 @@
+body {
+    min-height: 100%;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Logo banner at the top */
+.logo-banner {
+    padding: 15px 0 10px 0;
+}
+
+/* Navigation */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    color: #3a879c;
+    font-size: 22px;
+}
+
+a {
+    color: #4b8e9d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #615ddb;
+    text-decoration: none;
+}
+
+/* Section headings */
+.row > h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Title area */
+h1.itt-title {
+    color: #3a879c;
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+h1.itt-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #3a879c;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+h2.itt-subtitle {
+    color: #555;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+/* Hero section with tinted background */
+.hero-section {
+    background-color: #f7f6f3;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 25px 20px 15px 20px;
+    margin-bottom: 10px;
+}
+
+/* Hero image */
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Content sections - more breathing room */
+.content-section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Schedule table */
+.schedule-table {
+    width: 100%;
+    max-width: 600px;
+}
+
+.schedule-table th {
+    background-color: #3a879c;
+    color: white;
+    padding: 8px 12px;
+}
+
+.schedule-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table tr:nth-child(even) td {
+    background-color: #f8f9fa;
+}
+
+/* Talk sections */
+.talk-block {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #bbbbbb;
+}
+
+.talk-block:last-child {
+    border-bottom: none;
+}
+
+.talk-title {
+    font-weight: bold;
+    font-size: 17px;
+    color: #3a879c;
+}
+
+.speaker-name {
+    font-weight: bold;
+}
+
+.speaker-affiliation {
+    font-style: italic;
+    color: #666;
+}
+
+.speaker-bio {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Participant list */
+.participant-list {
+    list-style: none;
+    padding-left: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.participant-list li {
+    padding: 3px 0;
+    break-inside: avoid;
+}
+
+.participant-list .affiliation {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Navbar active style */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: white;
+    color: #126162;
+    padding: 15px 15px 3px 15px;
+    box-shadow: 0px 2px 0px;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+/* Dark mode toggle - small and subtle at bottom */
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 8px;
+    line-height: 1;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    opacity: 0.5;
+}
+#dark-mode-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    opacity: 1;
+}
+
+.footer-bar {
+    margin-top: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #d4d4d4;
+}
+body.dark-mode .navbar {
+    border-bottom-color: #333;
+}
+body.dark-mode .navbar-brand {
+    color: #6dd4e4;
+}
+body.dark-mode a {
+    color: #6dd4e4;
+}
+body.dark-mode a:hover,
+body.dark-mode a:focus {
+    color: #a09cf0;
+}
+body.dark-mode .nav-link {
+    color: #d4d4d4;
+}
+body.dark-mode .nav-link:hover {
+    color: #6dd4e4;
+}
+body.dark-mode h1.itt-title {
+    color: #6dd4e4;
+}
+body.dark-mode h1.itt-title::after {
+    background-color: #6dd4e4;
+}
+body.dark-mode h2.itt-subtitle {
+    color: #aaa;
+}
+body.dark-mode .hero-section {
+    background-color: #151530;
+}
+body.dark-mode .hero-image {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+body.dark-mode .speaker-affiliation,
+body.dark-mode .speaker-bio {
+    color: #aaa;
+}
+body.dark-mode .participant-list .affiliation {
+    color: #999;
+}
+body.dark-mode .talk-title {
+    color: #6dd4e4;
+}
+body.dark-mode .schedule-table {
+    --bs-table-color: #d4d4d4;
+    --bs-table-border-color: #444;
+}
+body.dark-mode .schedule-table th {
+    background-color: #2a6a7a;
+}
+body.dark-mode .schedule-table td {
+    border-bottom-color: #444;
+}
+body.dark-mode .schedule-table tr:nth-child(even) td {
+    background-color: #1f1f3a;
+}
+body.dark-mode .talk-block {
+    border-bottom-color: #444;
+}
+body.dark-mode .footer-bar {
+    border-top-color: #333;
+}
+body.dark-mode #dark-mode-toggle {
+    color: #d4d4d4;
+}
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
